@@ -1,0 +1,10 @@
+name: my_app
+title:
+username:
+account: cleytonfarias
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 673808
+bundleId: 1844131
+url: https://cleytonfarias.shinyapps.io/my_app/
+when: 1548783707.94453
