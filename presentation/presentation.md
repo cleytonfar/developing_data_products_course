@@ -15,9 +15,10 @@ be plotted as well as a filter regarding preferred studios.
 
 - The appplication displays an scatterplot, a histogram as  well as the dataset. 
 
-- To have access to the application, please refer to this [link](https://cleytonfarias.shinyapps.io/my_app/);
+- To have access to the application, please refer to this  <a href="https://cleytonfarias.shinyapps.io/my_app/" target="_top"/>link</a> ;
 
-- All the necessary code to reproduce this exercise is available [here](www.google.com)
+- All the necessary code to reproduce this exercise is 
+available <a href="https://github.com/cleytonfar/developing_data_products_course" target="_top"/>Here</a>
 
 
 User Options
@@ -44,23 +45,19 @@ User Options
 - A summary of the dataset:
 
 
+```r
+library(data.table);library(dplyr)
+movies <- fread("~/Dropbox/R_Courses/Data_specialization/09_developing_data_products/final_project/presentation/movies.csv")
+movies %>%
+    select(1:3) %>% 
+    summary()
 ```
-    title            title_type           genre              runtime     
- Length:651         Length:651         Length:651         Min.   : 39.0  
- Class :character   Class :character   Class :character   1st Qu.: 92.0  
- Mode  :character   Mode  :character   Mode  :character   Median :103.0  
-                                                          Mean   :105.8  
-                                                          3rd Qu.:115.8  
-                                                          Max.   :267.0  
-                                                          NA's   :1      
- mpaa_rating           studio          thtr_rel_date     
+
+```
+    title            title_type           genre          
  Length:651         Length:651         Length:651        
  Class :character   Class :character   Class :character  
  Mode  :character   Mode  :character   Mode  :character  
-                                                         
-                                                         
-                                                         
-                                                         
 ```
 
 
